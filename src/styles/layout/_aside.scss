@@ -1,0 +1,64 @@
+.aside {
+  display: block;
+
+
+  .form-search {
+    text-align: center;
+
+
+    .search-text {
+      padding: 10px;
+
+      font-family: $primary-font;
+      font-size: 20px;
+      color: white;
+    }
+
+    .search-input {
+      padding: 10px;
+
+      border: white;
+
+      border-radius: 30px;
+
+      font-family: $secondary-font;
+      font-size: 12px;
+    }
+  }
+
+  .form-checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+
+
+    .checkbox-text {
+
+      padding: 10px;
+
+      font-family: $primary-font;
+      font-size: 20px;
+      color: white;
+     
+      .fas{padding-right: 10px;}
+    }
+
+    .checkbox-input {
+      border: white;
+      border-radius: 30px;
+      justify-content: end;
+      padding-top: 0.9375rem;
+
+    }
+
+
+  }
+}
+
+@media (min-width: 768px) {
+  .aside {
+    max-width: 500px;
+    min-width: 300px;
+  }
+}
