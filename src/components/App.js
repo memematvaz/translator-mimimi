@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/main.scss';
 import Response from './Response'
 import Input from './Input';
+import Aside from './Aside';
 
 
 class App extends React.Component {
@@ -28,6 +29,7 @@ class App extends React.Component {
         
         <Response textToTranslate={this.state.text}/>
 
+<Aside/>
       </div>  
     );
   }
