@@ -6,7 +6,7 @@
   background-color: #FFB600;
 }
 
-.container-aside-main {
+.container-main-aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +15,7 @@
 
 @media (min-width: 768px) {
 
-  .container-aside-main {
+  .container-main-aside {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

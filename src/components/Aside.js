@@ -4,7 +4,7 @@ import music from '../music/OpinionMierda.mp3';
 const Aside = () => {
 
     return (
-        <aside>
+        <aside className="aside">
             <div key="1" className="song">
                 <audio controls autoPlay>
                     <source src={music} type="audio/mp3" />

@@ -3,6 +3,7 @@ import '../styles/main.scss';
 import Response from './Response'
 import Input from './Input';
 import Aside from './Aside';
+import Header from './Header';
 
 
 class App extends React.Component {
@@ -24,12 +25,15 @@ class App extends React.Component {
   render() {
     return(
       <div className="App">
-
-        <Input translateThis={this.handleInputChange}/>
+        <Header/>
+       <div className="container-main-aside">
+        <div className="main">
+          <Input translateThis={this.handleInputChange}/>
         
-        <Response textToTranslate={this.state.text}/>
-
-<Aside/>
+          <Response textToTranslate={this.state.text}/>
+        </div>
+        <Aside/>
+        </div> 
       </div>  
     );
   }
