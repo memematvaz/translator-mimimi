@@ -9,9 +9,14 @@ const Aside = () => {
                 <audio controls autoPlay>
                     <source src={music} type="audio/mp3" />
                 </audio>
+                <button onClick={this.fakeClickPlay}>Play</button> 
+                <button onClick={this.fakeClickPause}>Pause</button> 
             </div>
         </aside>
     );
 };
 
 export default Aside;
+
+
+
