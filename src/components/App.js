@@ -13,11 +13,12 @@ class App extends React.Component {
 
         this.state = {
             text: '',
-            
+            myAudio: new Audio(music),
+            isPlaying: false,
         }
 
         this.handleInputChange = this.handleInputChange.bind(this);
-       // this.pausePlay = this.pausePlay.bind(this);
+        this.pausePlay = this.pausePlay.bind(this);
     }
 
     handleInputChange(event) {
@@ -25,13 +26,26 @@ class App extends React.Component {
         this.setState({ text: newText });
     }
 
+    pausePlay(event) {
+
+        //this.state.myAudio = ;
+
+        if(this.state.isPlaying){
+            this.state.myAudio.pause();
+            this.state.isPlaying = false;
+            console.log('pause', this.state.myAudio)
+        } else {
+            this.state.myAudio.play();
+            this.state.isPlaying = true;
+            console.log('play', this.state.myAudio)
+        }
+
+    }   
+
+  
 
 
-    //pausePlay(event) {
-    //    const myAudio = new Audio(music);
-    //    event.myAudio.play()
-    //}   
-
+    
     render() {
         return (
 
@@ -42,7 +56,7 @@ class App extends React.Component {
                         <Input translateThis = {this.handleInputChange}/>
                         <Response textToTranslate = { this.state.text }/> 
                     </div > 
-                    <Aside translateThis = {this.pausePlay}/>
+                    <Aside pausePlay = {this.pausePlay}/>
                 </div>  
             </div>
         );

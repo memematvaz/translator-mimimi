@@ -1,17 +1,17 @@
 import React from 'react';
-import music from '../music/OpinionMierda.mp3';
 
-const Aside = () => {
-const myAudio = new Audio(music);
-myAudio.play()
+class Aside extends React.Component {
+  render() {
 
-    return ( 
+    console.log(this.props)
+    return(
     
-    <>
-
-
-    </>
+            <button className="button" onClick={this.props.pausePlay}> soy un botón
+                
+            </button> 
     );
-};
+  }
+}
+
 
 export default Aside;
