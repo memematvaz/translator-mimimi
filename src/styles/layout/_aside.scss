@@ -1,9 +1,7 @@
 .aside {
-  audio { 
-    width:45px; 
-    height:25px;
-    cursor:pointer
-  }
+  .button {background-color: red;
+    width: 100px;
+  height: 100px;}
 }
 
 @media (min-width: 768px) {
