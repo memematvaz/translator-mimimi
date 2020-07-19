@@ -15,10 +15,12 @@ class App extends React.Component {
             text: '',
             myAudio: new Audio(music),
             isPlaying: false,
+            icon: 'far fa-play-circle'
         }
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.pausePlay = this.pausePlay.bind(this);
+   //     this.mousePosition = this.mousePosition.bind(this);
     }
 
     handleInputChange(event) {
@@ -33,20 +35,22 @@ class App extends React.Component {
         if(this.state.isPlaying){
             this.state.myAudio.pause();
             this.state.isPlaying = false;
+            this.setState({ icon: 'far fa-play-circle' });
             console.log('pause', this.state.myAudio)
         } else {
             this.state.myAudio.play();
             this.state.isPlaying = true;
+            this.setState({ icon: 'far fa-play-circle' });
             console.log('play', this.state.myAudio)
         }
 
     }   
-
-  
+ 
 
 
     
     render() {
+      
         return (
 
             <div className = "App" >
@@ -56,11 +60,13 @@ class App extends React.Component {
                         <Input translateThis = {this.handleInputChange}/>
                         <Response textToTranslate = { this.state.text }/> 
                     </div > 
-                    <Aside pausePlay = {this.pausePlay}/>
+                    <Aside pausePlay = {this.pausePlay} icon = {this.state.icon}/>
                 </div>  
             </div>
         );
     }
+
 }
+
 
 export default App;
