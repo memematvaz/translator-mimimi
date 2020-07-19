@@ -5,11 +5,12 @@ class Aside extends React.Component {
 
  
     return(
-    
-    <button className="button" onClick={this.props.pausePlay}> 
+    <aside className="aside">
+      <button className="button" onClick={this.props.pausePlay}> 
         <i className={ this.props.icon }></i> 
                 
             </button> 
+    </aside>
     );
   }
 }

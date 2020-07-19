@@ -1,0 +1,55 @@
+.main{
+    display: block;
+    text-align: center;
+   
+
+    .label{
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: $color;
+        padding-bottom: 10px;
+        font-size: 16px;
+        
+    }
+
+    textarea{
+        height: 200px;
+        width: 90vw;
+        border-color: $color;
+        color: $color;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+    }
+
+    .response{
+        font-family: 'Krona One', sans-serif;
+        text-align: center;
+        color: $color;
+        font-size: 20px;
+        width: 90vw;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .main{
+    
+        .label{
+            padding-bottom: 10px;
+            font-size: 20px;
+            
+        }
+    
+        textarea{
+            height: 200px;
+            max-width: 500px;
+            font-size: 16px;
+        }
+    
+        .response{
+            font-size: 25px;
+            max-width: 500px;
+        }
+    }
+}    

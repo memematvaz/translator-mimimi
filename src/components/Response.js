@@ -11,7 +11,7 @@ class Response extends React.Component {
     render() {
         const text = this.props.textToTranslate;
         return ( 
-        <div >
+        <div className="response">
             <p > { this.translateText(text) } </p> 
             </div >
         );

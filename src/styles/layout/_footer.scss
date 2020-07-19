@@ -1,0 +1,17 @@
+.footer {
+  width: 100vw;
+  font-family: 'Libre Barcode 39', cursive;
+  color: $color;
+  font-size: 40px;
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+@media (min-width: 768px) {
+  .footer{
+    font-size: 60px;
+  }
+}

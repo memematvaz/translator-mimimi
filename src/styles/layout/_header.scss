@@ -2,12 +2,23 @@
     h1{ 
         text-align: center;
         color: $color;
-        font-family: 'Grenze Gotisch', cursive;
-        font-weight: 150;
-        font-size: 50px;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 30px;
+        max-width: 90vw;
+        font-weight: 50;
     }
+
 
 }
 
 
 
+@media (min-width: 768px) {
+
+    .header {
+        h1{ 
+            font-size: 50px;
+            max-width: 800px;
+        }
+    }
+}    
