@@ -7,7 +7,7 @@ class Input extends React.Component {
   render() {
     return(      
       <form>
-        <textarea onChange={this.props.translateThis}/>
+        <textarea type='text' onChange={this.props.translateThis}/>
       </form>  
     );
   }

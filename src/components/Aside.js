@@ -6,7 +6,7 @@ class Aside extends React.Component {
  
     return(
     <aside className="aside">
-      <button className="button" onClick={this.props.pausePlay}> 
+      <button className="button" title="Música" onClick={this.props.pausePlay}> 
         <i className={ this.props.icon }></i> 
                 
             </button> 

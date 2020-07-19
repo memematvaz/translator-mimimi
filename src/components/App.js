@@ -65,7 +65,7 @@ class App extends React.Component {
                    
                    
                     <div className = "main" >
-                    <p className= "label">Cuéntanos ¿Qué estás pensando?</p>
+                    <label className= "label" for="Escribe tu opinión">Cuéntanos ¿Qué estás pensando?</label>
                         <Input translateThis = {this.handleInputChange}/>
                         <Response textToTranslate = { this.state.text }/> 
                     </div > 
