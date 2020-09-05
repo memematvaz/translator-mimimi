@@ -28,6 +28,20 @@
         font-size: 20px;
         width: 90vw;
         min-height: 170px;
+        p {
+         margin-bottom: 0
+        }
+        .button {
+          border: none;
+          cursor: pointer;
+          background-color: $color-background;
+          i{
+           font-size: 30px;
+           color: $color;
+           padding:5px;
+           text-align: center;
+          }
+      }
     }
 }
 
